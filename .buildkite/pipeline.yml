@@ -1,0 +1,5 @@
+steps:
+  - label: 'Build storybook'
+    command: yarn build-storybook
+    agents:
+      queue: default
