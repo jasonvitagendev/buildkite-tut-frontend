@@ -1,5 +1,7 @@
 steps:
+  - block: 'Are we ready?'
   - label: 'Build storybook'
-    command: yarn build-storybook
+    command: yarn && yarn build-storybook && ls
     agents:
       queue: default
+
