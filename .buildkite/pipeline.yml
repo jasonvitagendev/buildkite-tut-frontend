@@ -7,7 +7,6 @@ steps:
           image: jasonvitagen/buildkite-tut:latest
           workdir: /app
           propagate-environment: true
-          mount-buildkite-agent: true
           volumes:
             - /app/node_modules
     agents:
