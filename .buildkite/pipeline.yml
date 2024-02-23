@@ -6,6 +6,8 @@ steps:
       - docker#v5.9.0:
           image: jasonvitagen/buildkite-tut:latest
           workdir: /app
+          volumes:
+            - /app/node_modules
     agents:
       queue: default
 
