@@ -9,7 +9,7 @@ steps:
           propagate-environment: true
           mount-buildkite-agent: true
           volumes:
-            - node_modules:/app/node_modules
+            - './node_modules:/app/node_modules'
     commands:
       - ls -al /app
     agents:
