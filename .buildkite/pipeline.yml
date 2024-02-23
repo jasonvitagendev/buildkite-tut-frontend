@@ -1,7 +1,7 @@
 steps:
   - block: 'Are we ready?'
   - label: 'Build storybook'
-    command: yarn build-storybook && ls
+    command: ls
     plugins:
       - docker#v5.9.0:
           image: jasonvitagen/buildkite-tut:latest
