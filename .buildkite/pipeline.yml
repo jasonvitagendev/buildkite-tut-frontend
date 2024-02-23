@@ -9,7 +9,7 @@ steps:
           propagate-environment: true
           mount-buildkite-agent: true
     commands:
-      - ls /app
+      - ls -al /app
     agents:
       queue: default
 
