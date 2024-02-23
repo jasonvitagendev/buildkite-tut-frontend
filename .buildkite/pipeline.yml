@@ -1,7 +1,7 @@
 steps:
   - block: 'Are we ready?'
   - label: 'Build storybook'
-    command: ls /app
+    command: echo "Hello"
     agents:
       queue: default
 
