@@ -3,11 +3,8 @@ steps:
   - label: 'Build storybook'
     command: yarn build-storybook && ls
     plugins:
-      - seek-oss/docker-ecr-cache#v2.1.1:
-          cache-on:
-            - package.json
-            - yarn.lock
       - docker#v5.9.0:
+          image: jasonvitagen/buildkite-tut:latest
           workdir: /app
     agents:
       queue: default
