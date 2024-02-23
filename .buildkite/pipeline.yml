@@ -8,6 +8,8 @@ steps:
           always-pull: true
           propagate-environment: true
           mount-buildkite-agent: true
+          volumes:
+            - /app/node_modules
     commands:
       - ls -al /app
     agents:
