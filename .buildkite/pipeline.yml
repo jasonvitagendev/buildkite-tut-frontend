@@ -1,12 +1,6 @@
 steps:
   - block: 'Are we ready?'
   - label: 'Build storybook'
-    plugins:
-      - docker#v5.9.0:
-          image: jasonvitagen/buildkite-tut:latest
-          always-pull: true
-          propagate-environment: true
-          mount-buildkite-agent: true
     command: ls /app
     agents:
       queue: default
