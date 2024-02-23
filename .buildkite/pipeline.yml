@@ -1,16 +1,8 @@
 steps:
-#  - block: 'Are we ready?'
+  - block: 'Are we ready?'
   - label: 'Build storybook'
-    plugins:
-      - docker#v5.9.0:
-          image: node:20
-          workdir: /app
-          always-pull: true
-          propagate-environment: true
-          mount-buildkite-agent: true
-
-    commands:
-      - ls -al /app
+    command: yarn && yarn build-storybook && ls
     agents:
       queue: default
+
 
