@@ -5,6 +5,7 @@ steps:
     plugins:
       - docker#v5.9.0:
           image: jasonvitagen/buildkite-tut:latest
+          always-pull: true
           workdir: /app
           propagate-environment: true
           mount-buildkite-agent: true
