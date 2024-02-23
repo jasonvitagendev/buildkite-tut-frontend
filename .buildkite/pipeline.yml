@@ -3,7 +3,7 @@ steps:
   - label: 'Build storybook'
     plugins:
       - docker#v5.9.0:
-          image: jasonvitagen/buildkite-tut:latest
+          image: node:20
           workdir: /app
           always-pull: true
           propagate-environment: true
